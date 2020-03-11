@@ -77,3 +77,23 @@ pet_dog = {:name => "Fluffy", :species => "dog"}
 users["Erik"][:pets] << pet_dog
 p users["Erik"][:pets]
 # 10. Add another person to the users hash
+new_user = {
+  "Amy" => {
+    :twitter => "not available",
+    :lottery_numbers => [11, 3, 20, 20, 23, 19, 97],
+    :home_town => "Glasgow",
+    :pets => [
+      {
+      :name => "Maisie",
+      :species => "dog"
+    },
+    {
+      :name => "Minnie",
+      :species => "cat"
+    },
+    ]
+      }
+    }
+
+users.merge!(new_user)
+p users
