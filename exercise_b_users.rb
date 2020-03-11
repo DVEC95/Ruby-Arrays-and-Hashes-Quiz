@@ -57,7 +57,8 @@ users = {
 # 1. Get Jonathan's Twitter handle (i.e. the string `"jonnyt"`)
 p users["Jonathan"][:twitter]
 # 2. Get Erik's hometown
-p users["Erik"][:home_town]
+home_town = users["Erik"][:home_town]
+p home_town
 # 3. Get the array of Erik's lottery numbers
 p users["Erik"][:lottery_numbers]
 # 4. Get the species of Avril's pet Monty
@@ -69,8 +70,8 @@ p lottery_numbers.min
 p lottery_numbers.select {|even_num| even_num.even? }
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
 lottery_numbers << 7
-p lottery_numbers
 # 8. Change Erik's hometown to Edinburgh
-
+home_town = "Edinburgh"
+p home_town
 # 9. Add a pet dog to Erik called "Fluffy"
 # 10. Add another person to the users hash
