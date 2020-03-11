@@ -24,4 +24,7 @@ n_ireland = {:name => "Northern Ireland", :population => 1811000, :capital => "B
 united_kingdom.push(n_ireland)
 p united_kingdom[3]
 # 3. Use a loop to print the names of all the countries in the UK.
+for country in united_kingdom
+   p country[:name]
+end
 # 4. Use a loop to find the total population of the UK.
