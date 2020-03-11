@@ -57,12 +57,11 @@ users = {
 # 1. Get Jonathan's Twitter handle (i.e. the string `"jonnyt"`)
 p users["Jonathan"][:twitter]
 # 2. Get Erik's hometown
-home_town = users["Erik"][:home_town]
-p home_town
+p users["Erik"][:home_town]
 # 3. Get the array of Erik's lottery numbers
 p users["Erik"][:lottery_numbers]
 # 4. Get the species of Avril's pet Monty
-
+p users["Avril"][:pets][0][:species]
 # 5. Get the smallest of Erik's lottery numbers
 lottery_numbers = users["Erik"][:lottery_numbers]
 p lottery_numbers.min
