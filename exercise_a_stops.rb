@@ -21,5 +21,6 @@ p stops.fetch(2)
 #9. Reverse the positions of the stops in the array
 stops.reverse
 #10 Print out all the stops using a for loop
-
-p stops
+for stop in stops
+  p stop
+end
