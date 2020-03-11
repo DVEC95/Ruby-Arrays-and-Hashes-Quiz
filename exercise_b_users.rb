@@ -71,7 +71,8 @@ p lottery_numbers.select {|even_num| even_num.even? }
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
 lottery_numbers << 7
 # 8. Change Erik's hometown to Edinburgh
-home_town = "Edinburgh"
-p home_town
+users["Erik"][:home_town] = "Edinburgh"
+p users["Erik"][:home_town]
 # 9. Add a pet dog to Erik called "Fluffy"
+
 # 10. Add another person to the users hash
